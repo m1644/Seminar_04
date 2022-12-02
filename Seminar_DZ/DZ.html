@@ -11,14 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        html, body, h1, h2, h3, h4, h5, h6 {
             font-family: 'Jost', sans-serif;
         }
     </style>
@@ -28,12 +21,11 @@
 
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
         <!-- The Grid -->
         <div class="w3-row-padding">
-
             <!-- Left Column -->
             <div class="w3-third">
+
             	<?php
 					$name = 'Максим';
 					$city = 'Москва, Россия';
@@ -77,14 +69,12 @@
                         </p>
                         <hr>
 
-                        <p class="w3-large"><b><i
-                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
+                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
                         <p>
                             <?php echo $skills['skill_name'][0]; ?>
                         </p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal"
-                                style="width:<?php echo $skills['level'][0]; ?>%">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal"style="width:<?php echo $skills['level'][0]; ?>%">
                                 <?php echo $skills['level'][0]; ?>%
                             </div>
                         </div>
@@ -92,8 +82,7 @@
                             <?php echo $skills['skill_name'][1]; ?>
                         </p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal"
-                                style="width:<?php echo $skills['level'][1]; ?>%">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal"style="width:<?php echo $skills['level'][1]; ?>%">
                                 <div class="w3-center w3-text-white">
                                     <?php echo $skills['level'][1]; ?>%
                                 </div>
@@ -103,8 +92,7 @@
                             <?php echo $skills['skill_name'][2]; ?>
                         </p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal"
-                                style="width:<?php echo $skills['level'][2]; ?>%">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal"style="width:<?php echo $skills['level'][2]; ?>%">
                                 <?php echo $skills['level'][2]; ?>%
                             </div>
                         </div>
@@ -112,8 +100,7 @@
                             <?php echo $skills['skill_name'][3]; ?>
                         </p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal"
-                                style="width:<?php echo $skills['level'][3]; ?>%">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal"style="width:<?php echo $skills['level'][3]; ?>%">
                                 <?php echo $skills['level'][3]; ?>%
                             </div>
                         </div>
@@ -137,11 +124,12 @@
                     </div>
                 </div><br>
 
-                <!-- End Left Column -->
+            <!-- End Left Column -->
             </div>
 
             <!-- Right Column -->
             <div class="w3-twothird">
+                
             	<?php
     				$job = [
     					'job_name' => ['GB', 'Батери Тим', 'Студия Лебедева'],
@@ -212,13 +200,13 @@
                     </div>
                 </div>
 
-                <!-- End Right Column -->
+            <!-- End Right Column -->
             </div>
 
-            <!-- End Grid -->
+        <!-- End Grid -->
         </div>
 
-        <!-- End Page Container -->
+    <!-- End Page Container -->
     </div>
 
     <!-- Footer -->
@@ -231,4 +219,5 @@
     </footer>
 
 </body>
+
 </html>
