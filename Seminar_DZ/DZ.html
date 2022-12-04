@@ -11,14 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        html, body, h1, h2, h3, h4, h5, h6 {
             font-family: 'Jost', sans-serif;
         }
     </style>
@@ -28,25 +21,24 @@
 
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
         <!-- The Grid -->
         <div class="w3-row-padding">
-
             <!-- Left Column -->
             <div class="w3-third">
-                <?php
-                    $name = 'Максим';
-                    $city = 'Москва, Россия';
-                    $profi = 'QA Инженер';
-                    $email = 'email@email.com';
-                    $phone = 79037778866;
-                    $age = 2022-1977;
-                    $days = (2022-1977)*365;
-                    $skills = [
-                        'skill_name' => ['Adobe Photoshop', 'Фотография', 'Illustrator', 'Копирайтинг'],
-                        'level' => [95, 84, 70, 80]
-                    ]
-                ?>
+
+            	<?php
+					$name = 'Максим';
+					$city = 'Москва, Россия';
+					$profi = 'QA Инженер';
+					$email = 'email@email.com';
+					$phone = 79037778866;
+    				$age = 2022-1977;
+					$days = (2022-1977)*365;
+    				$skills = [
+        				'skill_name' => ['Adobe Photoshop', 'Фотография', 'Illustrator', 'Копирайтинг'],
+        				'level' => [95, 84, 70, 80]
+    				]
+				?>
 
                 <div class="w3-white w3-text-grey w3-card-4">
                     <div class="w3-display-container">
@@ -77,8 +69,7 @@
                         </p>
                         <hr>
 
-                        <p class="w3-large"><b><i
-                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
+                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
                         <p>
                             <?php echo $skills['skill_name'][0]; ?>
                         </p>
@@ -133,38 +124,57 @@
                     </div>
                 </div><br>
 
-                <!-- End Left Column -->
+            <!-- End Left Column -->
             </div>
 
             <!-- Right Column -->
             <div class="w3-twothird">
+                
+            	<?php
+    				$job = [
+    					'job_name' => ['GB', 'Батери Тим', 'Студия Лебедева'],
+        				'job_data' => ['2022-Настоящее время', '2010-2021', '1997-2010'],
+        				'job_desc' => ['Учеба', 'Много интересной работы', 'Разная работа'],
+    				]
+				?>
 
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
                     <h2 class="w3-text-grey w3-padding-16"><i
                             class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Front End Developer </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span
-                                class="w3-tag w3-teal w3-round">Current</span></h6>
-                        <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est
-                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
-                            iste.</p>
+                        <h5 class="w3-opacity"><b>
+                        	<?php echo $job['job_name'][0]; ?> 
+                        </b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                        	<?php echo $job['job_data'][0]; ?>
+                        </h6>
+                        <p>
+                        	<?php echo $job['job_desc'][0]; ?>
+                        </p>
                         <hr>
                     </div>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014
+                        <h5 class="w3-opacity"><b>
+                        	<?php echo $job['job_name'][1]; ?>
+                        </b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                        	<?php echo $job['job_data'][1]; ?>
                         </h6>
-                        <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est
-                            reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure,
-                            iste.</p>
+                        <p>
+                        	<?php echo $job['job_desc'][1]; ?>
+                        </p>
                         <hr>
                     </div>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012
+                        <h5 class="w3-opacity"><b>
+                        	<?php echo $job['job_name'][2]; ?>
+                        </b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                        	<?php echo $job['job_data'][2]; ?>
                         </h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+                        <p>
+                        	<?php echo $job['job_desc'][2]; ?> 
+                        </p><br>
                     </div>
                 </div>
 
@@ -190,13 +200,13 @@
                     </div>
                 </div>
 
-                <!-- End Right Column -->
+            <!-- End Right Column -->
             </div>
 
-            <!-- End Grid -->
+        <!-- End Grid -->
         </div>
 
-        <!-- End Page Container -->
+    <!-- End Page Container -->
     </div>
 
     <!-- Footer -->
